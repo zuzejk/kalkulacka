@@ -1,4 +1,5 @@
 from PyQt5 import QtWidgets, uic
+import pkg_resources
 
 def main():
     #vytvoreni aplikace a okna
@@ -6,7 +7,7 @@ def main():
     window = QtWidgets.QDialog()
 
     #nacteni ovladatek
-    with open("kalkulacka/calculator.ui", encoding="utf-8") as soubor:
+    with pkg_resources.resource_stream("kalkulacka", "calculator.ui") as soubor:
         uic.loadUi(soubor, window)
         #with otevre soubor, provede ukol a zavre soubor
         #uic.load nacte sablonu
