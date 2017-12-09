@@ -6,7 +6,7 @@ def main():
     window = QtWidgets.QDialog()
 
     #nacteni ovladatek
-    with open("calculator.ui", encoding="utf-8") as soubor:
+    with open("kalkulacka/calculator.ui", encoding="utf-8") as soubor:
         uic.loadUi(soubor, window)
         #with otevre soubor, provede ukol a zavre soubor
         #uic.load nacte sablonu
@@ -48,5 +48,3 @@ def main():
     # Spusteni
     window.show()
     return app.exec()
-
-main()
