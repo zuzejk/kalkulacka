@@ -28,7 +28,7 @@ def main():
                 result = operand1 + operand2
             elif operator == "-":
                 result = operand1 - operand2
-            elif operand1 == "*":
+            elif operator == "*":
                 result = operand1 * operand2
             elif operator == "/":
                 result = operand1 / operand2
